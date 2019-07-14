@@ -1,200 +1,440 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <title>Shower Presentation Engine</title>
+    <title>Ни QWERTY единой</title>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
-    <style>
-        .shower {
-            --slide-ratio: calc(16 / 9);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="shower list">
 
+
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>Не QWERTY единой</h1>
+        <p>Volodya Martynson</p>
     </header>
 
     <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+        <h2>Не QWERTY единой</h2>
+        <p>Подготовил <a href="https://t.me/martyns0n">Володя Мартинсон</a></p>
+        <p>Доклад о самом популярном фреймворке в IT, на котором, кажется, пишут
+            все — о клавиатурной раскладке.</p>
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
+            <img src="pictures/title-bg.jpg" alt="keyboard" class="cover">
         </figure>
         <style>
             #cover h2 {
                 margin: 30px 0 0;
-                color: white;
+                color: #FFF;
                 text-align: center;
                 font-size: 70px;
+                background-color: rgba(0, 0, 0, 0.5);
             }
 
             #cover p {
                 margin: 10px 0 0;
                 text-align: center;
-                color: white;
+                color: #FFF;
                 font-style: italic;
                 font-size: 20px;
+                background-color: rgba(0, 0, 0, 0.5);
             }
 
             #cover p a {
-                color: white;
+                color: rgb(255, 255, 255);
+            }
+
+            #cover .cover {
+                width: 100%;
+                filter: brightness(0.4);
             }
         </style>
     </section>
 
     <section class="slide">
-        <h2>Shower key features</h2>
+        <h2>Интро</h2>
+
+        <video src="pictures/cat.mp4" autoplay loop class="cover"
+            style="top: 59%; width: 37%;"></video>
+
+        <!-- Представиться.
+
+			 Я увлекся вопросом клавиатурных раскладок более полугода назад
+
+			 После пробы нескoльких раскладок создал собственную на которой печатаю вслепую
+
+			 Так как митап про бекенд, то шуток пор jquery я постараюсь избегать
+
+			 Для начала вопрос: какое сооотношение ОС?
+
+			 После опроса описать свой опыт и почему это важно -->
+    </section>
+
+    <section class="slide">
+        <h3>Spoilers</h3>
+        <ul>
+            <li class="next">Научился полному слепому вводу</li>
+            <li class="next">Наконец достиг 200 символов в минуту</li>
+            <li class="next">Понизил коэффициент ошибок с ~5%/~10% до <2% </li>
+                    <li class="next">НЕПРИКОСНОВЕННОСТЬ ЛИЧНОЙ КЛАВИАТУРЫ</li>
+            <!-- Не то чтобы специально, но кто пробовал теперь опасаются -->
+        </ul>
+    </section>
+
+
+    <section class="slide">
+        <h2>Причины сменить раскладку</h2>
+
+        <!-- Я перечислю причины, почему решил делать свою раскладку -->
+    </section>
+
+    <section class="slide">
+        <h3>Период обучения слепому вводу</h3>
+
+        <!-- кто печатает вслепу? -->
+
+        <!-- Кто хотел бы печатать вслепую? -->
+
+        <!-- Сужу по себе. Я научился печатать по-английски и еле-еле по-русски и множество раз забрасывал обучение. -->
+    </section>
+
+    <section class="slide">
+        <h3>Часто используемые символы</h3>
+
+        <img src="pictures/qwerty_heatmap.jpg" alt="">
+
+        <!-- Находятся вне основного ряда -->
+    </section>
+
+    <section class="slide">
+        <h3>Клавиши для пунктуации</h3>
+
+        <img class="cover" src="pictures/punktuation.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h3>Ассоциативная связь букв</h3>
+
+        <img src="pictures/translit.png" class="cover"
+            style="top: 60%; height: 60%; border: 1px solid gray" alt=""
+            srcset="">
+
+        <!-- Чтобы меньше держать в голове.
+
+			Это нивелирует оптимизацию, но стоит того-->
+    </section>
+
+    <section class="slide">
+        <h3>Нужно дважды учиться слепому вводу</h3>
+
+        <!-- это увеличивает порог входа, который в идеале должен преодолеть каждый -->
+    </section>
+
+    <section class="slide">
+        <h2>Краткая история <s>времени</s> QWERTY</h2>
+
+        <!-- Кто знает фамилию создателя QWERTY? -->
+
+        <p class="next">Американский инженер Шолес с коллегами создавал пишущие
+            машинки с конца 1860-х.</p>
+
+
+        <img src="pictures/remington.jpg" style="margin-left: 31%;width: 40%;"
+            alt="">
+
+        <!-- технические ограничения тогда были суровыми:
+
+			слепая печать ещё не изобретена,
+			рычаги задевают друг за друга и заклинивали,
+			а напечатанный текст можно увидеть, только провернув барабан.
+
+			Поэтому Шолес перемешал все таким образом, чтобы самые часто повторяемые буквы находились как можно дальше друг от друга.
+
+			Сделали как сумели, решая актуальные проблемы -->
+    </section>
+
+    <section class="slide">
+        <p>Сегодня QWERTY находится в суперпозиции. Она и жуткий анахронизм и
+            признанный стандарт.</p>
+
+        <!-- Чтобы понять как так вышло нужно обратиться к истории -->
+
+        <video src="pictures/superposition.mp4" autoplay loop class="cover"
+            style="top: 59%; width: 37%;"></video>
+    </section>
+
+    <section class="slide">
+        <h3>Так исторически сложилось</h3>
         <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
-        </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-        </div>
-    </section>
-
-    <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
+            <li class="next">1874, Remington No.1, первая коммерчески успешная
+                печатная машинка, которая представила QWERTY;</li>
+            <li class="next">1961, IBM Selectric , влиятельная электрическая
+                машинка;</li>
+            <li class="next">1985, IBM the Model M, компьютерная клавиатура
+                ставшая каноном.
+                <img src="pictures/IBM_Model_M.png"
+                    style="width:50%; margin-left: 24%;" alt="">
             </li>
-            <li>Look, seven rows exactly!</li>
         </ol>
+
+        <!-- Это можно обьяснить влиянием рынка. QWERTY была уже настолько влиятельна, что те кто бы решил сделать клавиатуру с иными обазначениями просто бы проиграл. Такие клавиатуры есть, как и те что изначально идут без обозначения клавиш. -->
     </section>
 
     <section class="slide">
-        <h2>Serious citations</h2>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
-        </figure>
+        <h3>Л — Локализатион</h3>
+
+        <img class="next" style="top: 60%" class="cover"
+            src="https://www.meme-arsenal.com/memes/94dbdf7c105c4e653c269f815bcf0b57.jpg"
+            alt="потрачено">
+
+        <!-- Придумали для машинок в Америке в конце XIX века. Буквально натянули на клавиатуру с коротким алфавитом.
+
+		Теперь мы имеем баги вроде запятой в верхнем регистре.
+
+		В верхнем регистре запятой нет ни в одной раскладке, кроме русской. -->
     </section>
 
     <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
+        <h2>Как понять, что раскладка лучше?</h2>
     </section>
 
     <section class="slide">
-        <h2>Even tables</h2>
+        <h3>Исследования</h3>
+
+        <p>Существующие исследования неубедительны в отношении того,
+            действительно ли раскладки предлагают какие-либо реальные выгоды.
+        </p>
+
+        <p class="note">Некоторые исследования допускают, что для опытного
+            наборщика текста раскладка не имеет значения.</p>
+
+        <!-- Часто затраты на смену раскладки перевешивают преимущества дальнейшего использования нынешней раскладки. -->
+
+        <!-- Исследования упускают важный фактор: раскладка как минимум вредна -->
+    </section>
+
+    <section class="slide">
+        <a href="http://mkweb.bcgsc.ca/carpalx/?about" target="_blank">
+            <img src="pictures/carpalx-logo.png" alt="">
+        </a>
+
+        <p>Я выбрал подход Мартина Кривински, канадского ученого в области
+            биоинформатки.</p>
+
+        <p class="note">Он создал математическую модель и клавиатурный
+            оптимизатор на ее основе — Carpalx. Оптимизатор призван
+            минимизировать усилия при печати и снижать напряжение на запястья.
+        </p>
+
+        <!-- CarPalx — самое тщательное исследование раскладок, призванное уменьшить дискомфорт при печати. -->
+
+        <!-- Кто знает про тунельный синдром запястного канала? -->
+    </section>
+
+    <section class="slide">
+        <h3>Про CTS <sup class="note">carpal tunnel syndrome</sup></h3>
+
+        <img src="pictures/carpal-tunnel-syndrome.png" class="cover"
+            style="top:60%;" alt="">
+
+        <!-- Проявляющется болью и онемением. Причиной заболевания является сдавление срединного нерва -->
+
+        <!-- Даже диагноз средней тяжести может поставить крест на карьере. -->
+
+        <!-- В группе риска женщины и это не сексизм, сурдопереводчики, пианисты, барабаншики, художники, программисты, киберспортсмены. -->
+    </section>
+
+    <section class="slide">
+        <h3>Carpalx</h3>
+        <p>С помощью Carpalx Мартин сопоставил существующие раскладки, а также
+            сгенерировал оптимизированные раскладки.</p>
+
+        <!-- Будет опрометчиво утверждать, что ему удалось создать лучшую раскладку. Тем не менее она сушественно снижает требуемые усилия при печати. Это подтверждают мой личный опыт и иные сравнителные исследования. -->
+
+        <!-- Kлавиатура и то, как вы её используете, оказывает большее влияние на здоровье рук, чем раскладка. И все же при нынешних условиях замена раскладки не теряет смысла и даже необходима. -->
+    </section>
+
+    <section class="slide">
+        <img src="pictures/carpalx-study.png" alt="" class="cover">
+    </section>
+
+    <section class="slide">
+        <h3>Факторы не учитываемые в исследованиях</h3>
+
+        <p>Привычные горячие клавиши</p>
+
+        <!-- Это важно так как hotkeys сформировались на основе qwerty, в ходе отбора.
+
+			Наиболее удобные паттерны наследовались и становились популярнее. И важны не столько буквы, сколько привычное положение клавиш.
+
+			Я сторонник сохранения совместимости с QWERTY-hotkeys -->
+    </section>
+
+    <section class="slide">
+        <h3>Факторы не учитываемые в исследованиях</h3>
+
+        <p>Скорость освоения слепого ввода, скорость печати и среднее количество
+            ошибок</p>
+
+        <!-- Сложно обьективно измерить эти показатели. Первые два в большей степени зависят от индивидуальных особенностей. Последний я считаю ключевым, на который влияет напрямую комфортность печати.
+
+		По личному опыту скажу, что на QWERTY/ЙЦУКЕН у меня были непреодолимые проблемы с рядом символов, в то время как в QGMLWB/ЯГМЛШБ я имею лишь сложные сочетания букв.
+
+		Скорости ввода 200симв/мин я добился только на QGMLWB/ЯГМЛШБ и обучился в разы быстрее при этом имея вдое меньшее среднее количество ошибок. -->
+    </section>
+
+    <section class="slide">
+        <h2>Если не QWERTY, то кто?*</h2>
+
+        <!-- Этим вопросом задаются те, кто не знает про наличиет альтернатив, а их много -->
+    </section>
+
+    <section class="slide">
+        <h3>1936 Dvorak</h3>
+        <img src="pictures/dvorak_heatmap.jpg" alt="">
+
+        <!-- Август Дворак, Профессор Вашингтонского Университета, одним из первых оптимизирован набор текста для десятипальцевого слепого метода, чтобы в большинстве слов символы набирались попеременно правой и левой рукой -->
+
+        <!-- Привычные клавиатуры зародились на рубеже 19 и 20 веков. -->
+
+        <!-- Критика дворака:
+
+		- обычные комбинации букв требуют движений пальцев.
+		- Для обычных комбинаций букв требуется, чтобы палец перепрыгнул через домашнюю строку.
+		- общие комбинации букв набираются одной рукой. (например, были)
+		- В основном печать ведется с левой стороны, что для большинства людей не является доминирующей рукой.
+		- Примерно 16% ввода выполняется в нижней строке, 52% в верхней строке и только 32% в домашней строке. -->
+    </section>
+
+    <section class="slide">
+        <h3>2006 Colemak. </h3>
+
+        <img src="pictures/colemak_heatmap.jpg" alt="">
+
+        <!-- Шаем Коулманом. Несколько лучше чем dvorak, при этом напоминает QWERTY -->
+    </section>
+
+    <section class="slide">
+        <h3>Русские оптимизированные раскладки</h3>
+        <ul>
+            <li class="next">Диктор и раскладка Зубачева</li>
+            <li class="next">Типографская раскладка Бирмана
+                <img style="width: 70%;" src="pictures/birman.png" alt="">
+            </li>
+            <li class="next"> Мефодица</li>
+        </ul>
+
+        <!--  -->
+    </section>
+
+    <section class="slide">
+        <h3>Сравнительная таблица</h3>
         <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
+            <tbody>
+                <tr>
+                    <th>ФИЧИ</th>
+                    <th class="center">QWERTY</th>
+                    <th class="center">Dvorak</th>
+                    <th class="center">Colemak</th>
+                </tr>
+                <tr>
+                    <th>Горячие клавиши</th>
+                    <td class="center">+</td>
+                    <td class="center">-</td>
+                    <td class="center">частично</td>
+                </tr>
+                <tr>
+                    <th>Для слепого ввода</th>
+                    <td class="center">-</td>
+                    <td class="center">+</td>
+                    <td class="center">+</td>
+                </tr>
+                <tr>
+                    <th>Эргономичность</th>
+                    <td class="center">-</td>
+                    <td class="center">+</td>
+                    <td class="center">+</td>
+                </tr>
+                <tr>
+                    <th>Доступность</th>
+                    <td class="center">+</td>
+                    <td class="center">+</td>
+                    <td class="center">частично</td>
+                </tr>
+            </tbody>
         </table>
-        <p>It’s good to have information organized.</p>
-    </section>
-
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #picture h2 {
-                color: white;
-            }
-        </style>
     </section>
 
     <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
+        <h2>Мой монстр</h2>
     </section>
 
     <section class="slide">
-        <h2>Inner navigation</h2>
-        <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
-        </ol>
+        <h3>Английская — модернизированная QGMLWB</h3>
+
+        <img src="pictures/qgmlwb.png" alt="">
+
+        <!-- Английский язый является основым.
+
+			Раскладка заимствована у carpalx.
+
+			Инвертировал регистр четвертого ряда.
+
+			Поставил переключение языка на capslock.
+
+			Добавил слой с qwerty для совместимости с горячими клавишами.
+
+			Эксперименты продолжаются -->
     </section>
 
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
+    <section class="slide">
+        <h3>Русская — фонетическая QGMLWB</h3>
 
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
-            }
-        </style>
+        <img src="pictures/qgmlwb-rus.png" alt="">
+
+        <p class="note">Фонетическая означает транслит английских букв на
+            русский</p>
+
+        <!-- Были сложности проб и ошибок.
+
+			Меньшим из зол стала руская фонетическая раскладка ЯГМЛШБ.
+
+			Невлезаюшие буквы повесил на ассоциативно близкие с зажатым ALT. Например у-ю, о-ё, е-э и тд  -->
+    </section>
+
+    <section class="slide">
+        <h2>Заключение</h2>
+
+        <p>Мы живем с очевидной данностью, но ничто не вечно.</p>
+
+        <p>Стоит подвергать сомнению привычные веши чтобы дальше двигать
+            прогресс.</p>
+
+        <!-- Изучение раскладок предполагает физическое устройство клавиатуры. -->
+
+        <!-- Проше создать программу для вычисления различных частот и расстояний между клавишами, как и создать собственную раскладку. Труднее придумать новую клавиатуру.  -->
+
+        <!-- Я выбрал путь наименьшего сопротивления и решал актуальную задачу -->
+    </section>
+
+    <section class="slide">
+        <p>Все раскладки сосредоточены на перетасовке клавиш на изначальной
+            форме клавиатуры IBM PC.</p>
+
+        <p class="note"> Полнoценным решением будет исследование обшей
+            эргономичности клавиатуры и ее переработка. Такие исследования есть.
+        </p>
+
+        <!-- Это отдельная тема и я допускаю, что об этом я раскажу в своем следуюшем докладе. -->
+    </section>
+
+    <section class="slide">
+        <h2>Примечания</h2>
+        <p><a href="#22*">*</a> — неуместная политическая отсылка</p>
     </section>
 
     <footer class="badge">
@@ -204,7 +444,7 @@
     <div class="progress"></div>
 
     <script src="node_modules/shower-core/shower.min.js"></script>
-    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
 
 </body>
-</html>
+
+</html>с
