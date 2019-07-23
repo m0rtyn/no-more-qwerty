@@ -30,6 +30,16 @@
     margin-left: 20px;
 }
 
+.slide::before {
+    content: "martyn.guru/no-more-qwerty";
+    position: absolute;
+    right: 16px;
+    bottom: 38px;
+    color: var(--color-light);
+    line-height: 18px;
+    text-align: right;
+}
+
 .note { color:#979a9e }
 
 .center {
@@ -43,3 +53,6 @@
     font-size: 38px;
 }
 
+.clear::after, .clear::before {
+    content: '';
+}
