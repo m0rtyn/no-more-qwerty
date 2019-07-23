@@ -1,17 +1,45 @@
 
-.slide h3 {
-    margin-bottom:34px;
-    color:#686a6e;
-    font:700 40px/1 PT Sans Narrow,sans-serif
+@font-face {
+	font-family:Fira Code;
+	src:url(./FiraCode-Regular.woff2) format('woff2');
 }
 
-.note
-{color:#979a9e}
+.shower {
+    --color-key: cornflowerblue;
+    --color-black: #212121;
+    --color-dark: #757575;
+    --color-medium: #9e9e9e;
+    --color-light: #bdbdbd;
+    --color-back: #eeeeee;
+    --color-yellow: #fff59d;
+    --color-yellow-light: #ffffcf;
+
+    --diagonal: transparent;
+}
+
+.slide h1, .slide h2, .slide h3 {
+    /* margin-bottom:34px; */
+    /* color:#686a6e; */
+    font-weight:700;
+    /* font-size: 40px; */
+    line-height: 1;
+}
+
+.slide::after {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.note { color:#979a9e }
 
 .center {
     text-align: center !important;
 }
 
-.shower.list {
-    background-color: #de2121 !important;
+.demo-textarea {
+    width: 100%;
+    /* height: 100%; */
+    font-family: Fira Code, monospaced;
+    font-size: 38px;
 }
+
